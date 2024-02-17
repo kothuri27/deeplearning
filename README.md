@@ -1,6 +1,6 @@
 # Machine Learning Tasks Overview
 
-# Task 1: Fundamentals of Machine Learning
+# Task 1: Fundamentals of DeepLearning
 ## Perceptron Learning Algorithm
 ### Description:
 - Implementation of perceptron learning algorithm for classifying a linearly separable dataset in 2D.
