@@ -1,69 +1,78 @@
-# Machine Learning Algorithms Implementation
+# Machine Learning Tasks Overview
 
-This repository contains implementations of various machine learning algorithms. Each algorithm is implemented in Python and includes a description, code, and analysis.
-
+# Task 1: Fundamentals of Machine Learning
 ## Perceptron Learning Algorithm
+### Description:
+- Implementation of perceptron learning algorithm for classifying a linearly separable dataset in 2D.
+- Includes dataset creation, training, and analysis.
 
-### Description
-The perceptron learning algorithm is implemented for classifying a linearly separable dataset in 2D.
-
-### Implementation
-The implementation includes dataset creation, the perceptron learning algorithm, and analysis.
-
-#### Dataset Creation
-A linearly separable dataset with at least 1000 data points is created.
-
-#### Perceptron Learning Algorithm
-The algorithm is implemented to classify the dataset.
-
-#### Analysis
-Observations are discussed with respect to the number of iterations required for perfect classification by varying the level of separability in the dataset.
-
-### Usage
-To run the perceptron learning algorithm, execute the `perceptron.py` script.
+### Files:
+- perceptron_learning_algorithm.py
 
 ## Gradient Descent for Training a Linear Classifier
+### Description:
+- Solving the classification problem using gradient descent algorithm.
+- Includes loss formulation, gradient computation, and update equation implementation.
 
-### Description
-Gradient descent is used for training a linear classifier on a linearly separable 2D dataset.
-
-### Implementation
-The implementation includes loss formulation, gradient computation, and the update equation.
-
-#### Loss Formulation
-A loss function based on classroom discussions is formulated.
-
-#### Gradient Computation
-The gradient of the loss function is computed analytically.
-
-#### Update Equation
-The basic version of the gradient descent update equation is implemented.
-
-### Usage
-To train the linear classifier using gradient descent, execute the `gradient_descent.py` script.
+### Files:
+- gradient_descent.py
 
 ## MLP with a Single Hidden Layer
+### Description:
+- Training a Multi-layer Perceptron (MLP) with a single hidden layer for binary classification on a non-linearly separable dataset in 2D.
 
-### Description
-A Multi-layer Perceptron (MLP) with a single hidden layer is trained for binary classification on a non-linearly separable dataset in 2D.
+### Files:
+- mlp_single_hidden_layer.py
 
-### Implementation
-The implementation includes dataset creation, MLP definition, backpropagation algorithm, and elegance/recursion considerations.
+# Task 2: Visualization Techniques for CNNs and SGD Update Rules
+## Variants of Backprop for Visualizing CNNs
+### Description:
+- Implementing and visualizing different backpropagation variants for Convolutional Neural Networks (CNNs) using a pre-trained ResNet-50 model.
 
-#### Dataset Creation
-A binary classification dataset that is not linearly separable in 2D is created (e.g., data lying on the circumference of two concentric circles).
+### Files:
+- cnn_visualization.py
 
-#### MLP Definition
-The architecture of the MLP with a single hidden layer is defined.
+## SGD Update Rule Variations
+### Description:
+- Implementing various update rules for Stochastic Gradient Descent (SGD) to find the minimum for a given function.
+- Includes visualization of convergence paths.
 
-#### Backpropagation Algorithm
-The gradient descent algorithm (backpropagation) is implemented for training the MLP.
+### Files:
+- sgd_update_rules.py
 
-#### Elegance/Recursion
-Considerations for elegance and recursion in the implementation are discussed.
+# Task 3: Recurrent Neural Networks (RNNs) for Sequence Summation
+## The Adding Problem
+### Description:
+- Training different RNN models (Elmon network, LSTM, and GRU) to solve the sequence summation problem.
+- Comparison against a baseline model.
+- Includes dataset creation, training, and performance analysis.
 
-### Usage
-To train the MLP with a single hidden layer, execute the `mlp.py` script.
+### Files:
+- rnn_sequence_summation.py
 
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+# Task 4: Autoencoders, Variational Autoencoder (VAE), and Self-Attention in CNN
+## Autoencoders
+### Description:
+- Training autoencoder models on the MNIST dataset with hidden dimensions of 32 and 64.
+- Reporting reconstruction errors and performing reconstructions in the hidden space.
+
+### Files:
+- autoencoders.py
+
+## Variational Autoencoder (VAE)
+### Description:
+- Training a VAE on the MNIST dataset to generate MNIST-like digits.
+- Generating and displaying images.
+
+### Files:
+- vae.py
+
+## Self-Attention in CNN
+### Description:
+- Implementing a CNN with one or more self-attention layer(s) for object recognition over the CIFAR-10 dataset.
+
+### Files:
+- cnn_self_attention.py
+
+# License
+This project is licensed under the MIT License - see the LICENSE file for details.
